@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="panGestureDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-cz-8uv">
+                                <rect key="frame" x="245" y="537" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="gPG-cU-09Y"/>
+                                    <constraint firstAttribute="height" constant="130" id="l5w-6N-lo1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="Q0C-Xa-yWu">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="FT0-dP-Rlf"/>
+                                    <constraint firstAttribute="height" constant="130" id="QBN-dg-gJU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ph0-cz-8uv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0J1-Ka-8kT"/>
+                            <constraint firstItem="Q0C-Xa-yWu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kah-qJ-RN9"/>
+                            <constraint firstItem="Ph0-cz-8uv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SRV-KC-cgQ"/>
+                            <constraint firstItem="Q0C-Xa-yWu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="siL-dP-uzJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fileImageView" destination="Q0C-Xa-yWu" id="rLL-e1-h2W"/>
+                        <outlet property="trashImageView" destination="Ph0-cz-8uv" id="aqK-P0-4Hq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="file" width="400" height="400"/>
+        <image name="trash" width="520" height="520"/>
+    </resources>
+</document>
